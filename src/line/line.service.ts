@@ -9,6 +9,8 @@ export class LineService {
     async handleWebhook(req: WebhookRequestBody): Promise<void> {
         const client = this.configService.createLinebotClient();
 
+        console.log(req);
+
         const events: WebhookEvent[] = req.events;
         events.forEach((event) => { 
             if (event.type === 'message') { 
