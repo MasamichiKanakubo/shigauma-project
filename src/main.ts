@@ -4,11 +4,8 @@ import { NestApplicationOptions } from '@nestjs/common';
 
 
 async function bootstrap() {
-  const options: NestApplicationOptions = {
-    bodyParser: false
-  }
 
-  const app = await NestFactory.create(AppModule, options);
+  const app = await NestFactory.create(AppModule);
   await app.listen(3000);
 }
 bootstrap();
