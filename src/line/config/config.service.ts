@@ -13,4 +13,3 @@ export class ConfigService {
     return new messagingApi.MessagingApiClient(clientConfig);
   }
 }
-

@@ -11,5 +11,3 @@ export class LineController {
     return this.lineService.handleWebhook(req);
   }
 }
-
-
